@@ -1,0 +1,53 @@
+<!-- File: warehouses.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Warehouses – Meat Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Meat Inventory Management</h1>
+    <nav>
+      <ul>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="batches.html">Batches</a></li>
+        <li><a href="warehouses.html" class="active">Warehouses</a></li>
+        <li><a href="shipments.html">Shipments</a></li>
+        <li><a href="vendors.html">Vendors</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Warehouses</h2>
+    <button class="primary">New Warehouse</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Warehouse ID</th>
+          <th>Location</th>
+          <th>Capacity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>WH‑A1</td><td>Dhaka</td><td>1000 kg</td></tr>
+        <tr><td>WH‑B2</td><td>Chittagong</td><td>800 kg</td></tr>
+        <!-- … -->
+      </tbody>
+    </table>
+    <form>
+      <h3>Add / Edit Warehouse</h3>
+      <label for="wh-id">Warehouse ID</label>
+      <input id="wh-id" type="text" placeholder="e.g. WH‑C3">
+      <label for="wh-location">Location</label>
+      <input id="wh-location" type="text" placeholder="e.g. Khulna">
+      <label for="wh-capacity">Capacity (kg)</label>
+      <input id="wh-capacity" type="number" placeholder="e.g. 1200">
+      <button type="submit" class="primary">Save</button>
+    </form>
+  </main>
+</body>
+</html>

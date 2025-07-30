@@ -1,0 +1,53 @@
+<!-- File: vendors.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Vendors – Meat Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Meat Inventory Management</h1>
+    <nav>
+      <ul>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="batches.html">Batches</a></li>
+        <li><a href="warehouses.html">Warehouses</a></li>
+        <li><a href="shipments.html">Shipments</a></li>
+        <li><a href="vendors.html" class="active">Vendors</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Vendors</h2>
+    <button class="primary">New Vendor</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Vendor ID</th>
+          <th>Name</th>
+          <th>Contact Info</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>VN‑001</td><td>FarmFresh Ltd.</td><td>+8801XXXXXXX</td></tr>
+        <tr><td>VN‑002</td><td>Prime Poultry</td><td>+8801YYYYYYY</td></tr>
+        <!-- … -->
+      </tbody>
+    </table>
+    <form>
+      <h3>Add / Edit Vendor</h3>
+      <label for="vend-id">Vendor ID</label>
+      <input id="vend-id" type="text" placeholder="e.g. VN‑003">
+      <label for="vend-name">Name</label>
+      <input id="vend-name" type="text" placeholder="e.g. Quality Meats">
+      <label for="vend-contact">Contact</label>
+      <input id="vend-contact" type="text" placeholder="e.g. +8801ZZZZZZZ">
+      <button type="submit" class="primary">Save</button>
+    </form>
+  </main>
+</body>
+</html>

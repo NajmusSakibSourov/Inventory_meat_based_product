@@ -1,0 +1,56 @@
+<!-- File: orders.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Orders – Meat Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Meat Inventory Management</h1>
+    <nav>
+      <ul>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="batches.html">Batches</a></li>
+        <li><a href="warehouses.html">Warehouses</a></li>
+        <li><a href="shipments.html">Shipments</a></li>
+        <li><a href="vendors.html">Vendors</a></li>
+        <li><a href="orders.html" class="active">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Customer Orders</h2>
+    <button class="primary">New Order</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Batch ID</th>
+          <th>Quantity</th>
+          <th>Order Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>CO‑001</td><td>BT‑001</td><td>50</td><td>2025‑07‑29</td></tr>
+        <tr><td>CO‑002</td><td>BT‑002</td><td>30</td><td>2025‑07‑30</td></tr>
+        <!-- … -->
+      </tbody>
+    </table>
+    <form>
+      <h3>Add / Edit Order</h3>
+      <label for="ord-id">Order ID</label>
+      <input id="ord-id" type="text" placeholder="e.g. CO‑003">
+      <label for="ord-batch">Batch ID</label>
+      <input id="ord-batch" type="text" placeholder="e.g. BT‑003">
+      <label for="ord-qty">Quantity</label>
+      <input id="ord-qty" type="number" placeholder="e.g. 40">
+      <label for="ord-date">Order Date</label>
+      <input id="ord-date" type="date">
+      <button type="submit" class="primary">Save</button>
+    </form>
+  </main>
+</body>
+</html>

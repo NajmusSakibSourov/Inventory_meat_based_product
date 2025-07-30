@@ -1,0 +1,54 @@
+<!-- File: inventory.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Inventory – Meat Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Meat Inventory Management</h1>
+    <nav>
+      <ul>
+        <li><a href="inventory.html" class="active">Inventory</a></li>
+        <li><a href="batches.html">Batches</a></li>
+        <li><a href="warehouses.html">Warehouses</a></li>
+        <li><a href="shipments.html">Shipments</a></li>
+        <li><a href="vendors.html">Vendors</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Inventory Records</h2>
+    <button class="primary">New Inventory Record</button>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Batch ID</th>
+          <th>Warehouse ID</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>BT‑001</td><td>WH‑A1</td><td>250</td></tr>
+        <tr><td>2</td><td>BT‑002</td><td>WH‑B2</td><td>100</td></tr>
+        <!-- … -->
+      </tbody>
+    </table>
+    <form>
+      <h3>Add / Edit Inventory</h3>
+      <label for="inv-batch">Batch ID</label>
+      <input id="inv-batch" type="text" placeholder="e.g. BT‑003">
+      <label for="inv-wh">Warehouse ID</label>
+      <input id="inv-wh" type="text" placeholder="e.g. WH‑C3">
+      <label for="inv-qty">Quantity</label>
+      <input id="inv-qty" type="number" placeholder="e.g. 150">
+      <button type="submit" class="primary">Save</button>
+    </form>
+  </main>
+</body>
+</html>

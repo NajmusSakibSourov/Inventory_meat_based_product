@@ -1,0 +1,60 @@
+<!-- File: batches.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Batches – Meat Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Meat Inventory Management</h1>
+    <nav>
+      <ul>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="batches.html" class="active">Batches</a></li>
+        <li><a href="warehouses.html">Warehouses</a></li>
+        <li><a href="shipments.html">Shipments</a></li>
+        <li><a href="vendors.html">Vendors</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Meat Batches</h2>
+    <button class="primary">New Batch</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Batch ID</th>
+          <th>Animal Type</th>
+          <th>Weight (kg)</th>
+          <th>Processing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>BT‑001</td><td>Beef</td><td>500</td><td>2025‑07‑28</td></tr>
+        <tr><td>BT‑002</td><td>Poultry</td><td>300</td><td>2025‑07‑29</td></tr>
+        <!-- … -->
+      </tbody>
+    </table>
+    <form>
+      <h3>Add / Edit Batch</h3>
+      <label for="batch-id">Batch ID</label>
+      <input id="batch-id" type="text" placeholder="e.g. BT‑003">
+      <label for="batch-type">Animal Type</label>
+      <select id="batch-type">
+        <option>Beef</option>
+        <option>Poultry</option>
+        <option>Pork</option>
+      </select>
+      <label for="batch-weight">Weight (kg)</label>
+      <input id="batch-weight" type="number" placeholder="e.g. 400">
+      <label for="batch-date">Processing Date</label>
+      <input id="batch-date" type="date">
+      <button type="submit" class="primary">Save</button>
+    </form>
+  </main>
+</body>
+</html>
